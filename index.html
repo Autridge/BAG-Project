@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bag-About Page Demo</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://www.bag.work "
+        ><img src="img/bagLogo.png" alt="Logo" class="header__logo"
+      /></a>
+    </header>
+    <main class="main">
+      <section class="about u-margin-top-lg">
+        <div class="about__heading">
+          <h1 class="about__heading-text">About</h1>
+        </div>
+        <div class="about__flex">
+          <div class="about__flex-1">
+            <p class="about__flex-paragraph u-margin-bottom-sm">
+              Welcome to BAG, where we specialize in designing innovative work
+              experience programs that not only equip students for entry-level
+              jobs but also contribute to building robust talent pipelines for
+              employers. Our commitment to bridging the gap between education
+              and industry ensures that both students and employers benefit from
+              a seamless transition into the professional world.
+            </p>
+            <p class="about__flex-paragraph">
+              <span class="about__flex-paragraph--span">Our Specialties:</span>
+              <br />
+              <br />
+              Edtech: Pioneering advancements in educational technology to
+              enhance learning experiences. Career Development: Focused on
+              shaping the future workforce through targeted development
+              programs.
+            </p>
+          </div>
+
+          <div class="about__flex-2">
+            <div class="about__flex-text-box u-margin-bottom-sm">
+              <p class="about__flex-text-box--paragraph">
+                Location: <br />Headquarters: Kigali, Kacyiru <br />
+                <br />
+                Established in 2017: <br />
+                <br />
+                BAG Work was founded in 2017 with a vision to revolutionize the
+                intersection of education and professional development. Our
+                journey has been marked by a steadfast commitment to Edtech and
+                Career Development.
+              </p>
+            </div>
+            <button class="btn about__flex-2--btn open-modal">
+              <i class="bi bi-arrow-90deg-up"></i> Feedback
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback-section">
+        <div class="feedback hidden">
+          <button class="feedback__close-modal">&times;</button>
+          <h4 class="feedback__heading">We'd love to hear your feedback😍</h4>
+
+          <form action="#" class="form">
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
+              <label for="name" class="form__label">Full Name</label>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <label for="email" class="form__label">Email Address</label>
+            </div>
+            <p class="feedback__paragraph u-margin-bottom-sm">
+              Help us Grow, we appreciate your feedback
+            </p>
+            <div class="form__group">
+              <textarea
+                class="form__input"
+                id="feedback"
+                placeholder="Your Feedback"
+                required
+              ></textarea>
+              <label for="feedback" class="form__label"
+                >Write your Feedback</label
+              >
+            </div>
+            <button class="btn btn--green" onclick="submitForm()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div class="feedback__overlay hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

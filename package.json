@@ -1,0 +1,14 @@
+{
+  "name": "bag-project",
+  "version": "1.0.0",
+  "description": "About Bag for Bag Project",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
