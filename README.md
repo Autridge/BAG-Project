@@ -8,7 +8,7 @@ Key Features
 Responsive design for desktops, tablets, and smartphones.
 Displays the BAG logo and a concise description of the company.
 View the Design
-Explore the responsive "About Us" page by clicking here.
+Explore the responsive "About Us" page by [GitHub Repository](https://autridge.github.io/BAG-Project/).
 
 User Feedback Mechanism
 Overview
@@ -35,5 +35,6 @@ Web pages deployed on Vercel.
 
 Live links to ensure functionality.
 Explore the Repository and Live Pages
-GitHub Repository
-Live Pages on Vercel
+[GitHub Repository](https://autridge.github.io/BAG-Project/)
+[Live Pages on Vercel
+](https://bag-project.vercel.app/)https://bag-project.vercel.app/
