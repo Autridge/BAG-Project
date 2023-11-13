@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+    line-height: 1.2;
+
+    &__heading {
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+
+        &-text {
+            font-size: 6rem;
+            display: inline-block;
+            color: transparent;
+            background-image: linear-gradient(to right, $color-heading, $color-heading-light);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex: 1;
+        gap: 8rem;
+
+        &-text-box {
+            background-color: $color-text-box;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 .5rem 1rem rgba($color-primary, .2);
+
+            &--paragraph {
+                color: $color-bkg;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // Media query for smaller screens (max-width: 768px)
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+
+        &__heading {
+            margin-bottom: 2rem;
+
+            &-text {
+                font-size: 4rem;
+            }
+        }
+
+        &__flex {
+            flex-direction: column;
+            gap: 4rem;
+
+            &-text-box {
+                padding: 1rem;
+            }
+        }
+    }
+
+    // Further styles for very small screens
+    font-size: 1.5rem;
+
+    &__heading {
+        margin-bottom: 1.5rem;
+
+        &-text {
+            font-size: 3rem;
+        }
+    }
+
+    &__flex {
+        gap: 2rem;
+
+        &-text-box {
+            padding: 0.5rem;
+        }
+    }
+}
